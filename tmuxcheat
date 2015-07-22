@@ -1,0 +1,27 @@
+Session Control
+-----------------
+tmux 	       Start a new session
+tmux attach    Re-attach a detached session
+tmux attach -d Re-attach a detached session
+               (and detach it from elsewhere)
+
+Pane Control
+------------------
+Ctrl-B " 	Split pane horizontally
+Ctrl-B % 	Split pane vertically
+Ctrl-B o 	Next pane
+Ctrl-B ; 	Previous pane
+Ctrl-B x 	Kill current pane
+Ctrl-B ! 	Kill all panes but the current one
+Ctrl-B Ctrl-O 	Swap panes
+Ctrl-B t 	Display clock
+Ctrl-B q 	Transpose two letters
+            (delete and paste)
+
+Window Control
+----------------
+Ctrl-B c 	Create new window
+Ctrl-B d 	Detach from session
+Ctrl-B , 	Rename a window
+Ctrl-B w 	List windows
+Ctrl-B [0-9] Switch Window

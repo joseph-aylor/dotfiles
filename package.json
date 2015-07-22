@@ -1,0 +1,10 @@
+{
+  "name" : "JoesTools",
+  "version" : "1.0.0",
+  "description" : "Tools for use on my system",
+  "dependencies" :
+  {
+    "jshint":"*"
+    ,"jslint":"*"
+  }
+}
