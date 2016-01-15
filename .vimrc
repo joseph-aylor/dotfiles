@@ -61,3 +61,8 @@ endif
 let g:flake8_max_line_length=100
 
 let g:zipPlugin_ext = '*.zip,*.jar,*.xpi,*.ja,*.war,*.ear,*.celzip,*.oxt,*.kmz,*.wsz,*.xap,*.docx,*.docm,*.dotx,*.dotm,*.potx,*.potm,*.ppsx,*.ppsm,*.pptx,*.pptm,*.ppam,*.sldx,*.thmx,*.crtx,*.vdw,*.glox,*.gcsx,*.gqsx'
+
+" This makes airline appear
+set laststatus=2
+" Since we have airline, this is redundant
+set noshowmode
