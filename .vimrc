@@ -66,3 +66,5 @@ let g:zipPlugin_ext = '*.zip,*.jar,*.xpi,*.ja,*.war,*.ear,*.celzip,*.oxt,*.kmz,*
 set laststatus=2
 " Since we have airline, this is redundant
 set noshowmode
+" Use simple Airline theme
+let g:airline_theme='simple'
