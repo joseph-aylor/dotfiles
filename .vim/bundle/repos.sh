@@ -9,3 +9,4 @@ git clone https://github.com/tpope/vim-surround.git;
 git clone https://github.com/tpope/vim-rails.git;
 git clone https://github.com/vim-ruby/vim-ruby.git;
 git clone https://github.com/airblade/vim-gitgutter.git;
+git clone https://github.com/vim-airline/vim-airline-themes.git;
