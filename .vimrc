@@ -53,9 +53,18 @@ function MyDiff()
 endfunction
 
 colorscheme default
-if has("gui_macvim")
-    set guifont=Monaco\ 14
-    colorscheme slate
+
+if has("gui_running")
+    if has("gui_win32")
+        set guifont=Lucida\ Console:h12
+        colorscheme slate
+    elseif has("gui_macvim")
+        set guifont="Monaco\ 14"
+        colorscheme slate
+    else
+        set guifont=Consolas\ 14
+        colorscheme slate
+    endif
 endif
 
 let g:flake8_max_line_length=100
@@ -68,3 +77,6 @@ set laststatus=2
 set noshowmode
 " Use simple Airline theme
 let g:airline_theme='simple'
+
+let g:syntastic_typescript_checkers = ['tslint', 'tsc']
+let g:syntastic_typescript_tsc_fname = ''
