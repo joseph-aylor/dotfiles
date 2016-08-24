@@ -4,19 +4,17 @@ curr=$(cat ~/.rotate)
 
 case $curr in
     right)
-	xrandr -o inverted
-	echo inverted > ~/.rotate
+	direction=inverted
 	;;
     inverted)
-	xrandr -o left
-	echo left > ~/.rotate
+	direction=left
 	;;
     left)
-	xrandr -o normal
-	echo normal > ~/.rotate
+	direction=normal
 	;;
     *)
-	xrandr -o right
-	echo right > ~/.rotate
+	direction=right
 	;;
- esac
+esac
+xrandr -o $direction
+echo $direction > ~/.rotate
