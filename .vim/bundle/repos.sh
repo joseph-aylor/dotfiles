@@ -12,3 +12,4 @@ git clone https://github.com/airblade/vim-gitgutter.git;
 git clone https://github.com/vim-airline/vim-airline-themes.git;
 git clone https://github.com/leafgarland/typescript-vim.git;
 git clone https://github.com/HerringtonDarkholme/yats.vim.git
+git clone https://github.com/tpope/vim-fugitive.git
