@@ -21,6 +21,8 @@ map <C-j> <C-w>j
 map <C-k> <C-w>k
 map <C-l> <C-W>l
 nmap <C-o> 090la<Enter><Esc>
+set splitbelow
+set splitright
 
 let g:indent_guides_enable_on_vim_startup = 1
 let g:indent_guides_exclude_filetypes = ['help', 'nerdtree']
