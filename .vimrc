@@ -4,9 +4,9 @@ set ruler
 set nocompatible
 set nobackup
 set noswapfile
-set tabstop=4
-set shiftwidth=4
-set softtabstop=4
+set tabstop=2
+set shiftwidth=2
+set softtabstop=2
 set expandtab
 set nowrap
 set number
@@ -30,6 +30,7 @@ let g:indent_guides_guide_size = 1
 let g:indent_guides_start_level = 1
 
 set diffexpr=MyDiff()
+
 function MyDiff()
   let opt = '-a --binary '
   if &diffopt =~ 'icase' | let opt = opt . '-i ' | endif
@@ -69,8 +70,6 @@ if has("gui_running")
     endif
 endif
 
-let g:flake8_max_line_length=100
-
 let g:zipPlugin_ext = '*.zip,*.jar,*.xpi,*.ja,*.war,*.ear,*.celzip,*.oxt,*.kmz,*.wsz,*.xap,*.docx,*.docm,*.dotx,*.dotm,*.potx,*.potm,*.ppsx,*.ppsm,*.pptx,*.pptm,*.ppam,*.sldx,*.thmx,*.crtx,*.vdw,*.glox,*.gcsx,*.gqsx'
 
 " This makes airline appear
@@ -79,6 +78,8 @@ set laststatus=2
 set noshowmode
 " Use simple Airline theme
 let g:airline_theme='simple'
-
+let g:syntastic_ruby_checkers = ['rubocop', 'mri']
+let g:flake8_max_line_length=100
 let g:syntastic_typescript_checkers = ['tslint', 'tsc']
 let g:syntastic_typescript_tsc_fname = ''
+
