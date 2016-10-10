@@ -83,3 +83,5 @@ let g:flake8_max_line_length=100
 let g:syntastic_typescript_checkers = ['tslint', 'tsc']
 let g:syntastic_typescript_tsc_fname = ''
 
+" Open NERDTree on open
+au VimEnter * NERDTree
