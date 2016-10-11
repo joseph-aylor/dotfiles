@@ -79,9 +79,11 @@ set noshowmode
 " Use simple Airline theme
 let g:airline_theme='simple'
 let g:syntastic_ruby_checkers = ['rubocop', 'mri']
+let g:syntastic_eruby_checkers = ['ruby', 'rubocop']
 let g:flake8_max_line_length=100
 let g:syntastic_typescript_checkers = ['tslint', 'tsc']
 let g:syntastic_typescript_tsc_fname = ''
 
 " Open NERDTree on open
 au VimEnter * NERDTree
+au VimEnter * wincmd p
