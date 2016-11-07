@@ -20,6 +20,7 @@ map <C-h> <C-w>h
 map <C-j> <C-w>j
 map <C-k> <C-w>k
 map <C-l> <C-W>l
+map <C-b> :CtrlPBuffer<Enter>
 nmap <C-o> 090la<Enter><Esc>
 set splitbelow
 set splitright
