@@ -88,3 +88,6 @@ let g:syntastic_typescript_tsc_fname = ''
 " Open NERDTree on open
 au VimEnter * NERDTree
 au VimEnter * wincmd p
+
+" Multiple Cursors
+let g:multi_cursor_insert_maps = {'q':1}
