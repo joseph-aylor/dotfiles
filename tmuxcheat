@@ -15,8 +15,6 @@ Ctrl-B x 	Kill current pane
 Ctrl-B ! 	Kill all panes but the current one
 Ctrl-B Ctrl-O 	Swap panes
 Ctrl-B t 	Display clock
-Ctrl-B q 	Transpose two letters
-            (delete and paste)
 
 Window Control
 ----------------
