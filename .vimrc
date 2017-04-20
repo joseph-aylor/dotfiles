@@ -56,7 +56,7 @@ function MyDiff()
   silent execute '!' . cmd . ' ' . opt . arg1 . ' ' . arg2 . ' > ' . arg3 . eq
 endfunction
 
-colorscheme default
+colorscheme slate
 
 if has("gui_running")
     if has("gui_win32")
@@ -71,7 +71,7 @@ if has("gui_running")
     endif
 endif
 
-let g:zipPlugin_ext = '*.zip,*.jar,*.xpi,*.ja,*.war,*.ear,*.celzip,*.oxt,*.kmz,*.wsz,*.xap,*.docx,*.docm,*.dotx,*.dotm,*.potx,*.potm,*.ppsx,*.ppsm,*.pptx,*.pptm,*.ppam,*.sldx,*.thmx,*.crtx,*.vdw,*.glox,*.gcsx,*.gqsx'
+let g:zipPlugin_ext = '*.gqsx'
 
 " This makes airline appear
 set laststatus=2
