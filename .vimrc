@@ -24,6 +24,8 @@ map <C-b> :CtrlPBuffer<Enter>
 nmap <C-o> 090la<Enter><Esc>
 set splitbelow
 set splitright
+set fdm=syntax
+set foldlevelstart=20
 
 let g:indent_guides_enable_on_vim_startup = 1
 let g:indent_guides_exclude_filetypes = ['help', 'nerdtree']
@@ -88,6 +90,3 @@ let g:syntastic_typescript_tsc_fname = ''
 " Open NERDTree on open
 au VimEnter * NERDTree
 au VimEnter * wincmd p
-
-" Multiple Cursors
-let g:multi_cursor_insert_maps = {'q':1}
