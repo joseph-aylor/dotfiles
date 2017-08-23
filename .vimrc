@@ -24,7 +24,7 @@ map <C-b> :CtrlPBuffer<Enter>
 nmap <C-o> 090la<Enter><Esc>
 set splitbelow
 set splitright
-set fdm=syntax
+set fdm=indent
 set foldlevelstart=20
 
 let g:indent_guides_enable_on_vim_startup = 1
@@ -81,8 +81,16 @@ set laststatus=2
 set noshowmode
 " Use simple Airline theme
 let g:airline_theme='simple'
+
+" Syntastic Checkers
+" Be sure to install them using package managers (npm, gem)
+" Sqlint is a gem BTW
 let g:syntastic_ruby_checkers = ['rubocop', 'mri']
 let g:syntastic_eruby_checkers = ['ruby', 'rubocop']
+let g:syntastic_coffeescript_checkers = ['coffee', 'coffelint']
+let g:syntastic_json_checkers = ['jsonlint']
+let g:syntastic_sass_checkers = ['sass']
+let g:syntastic_sql_checkers = ['sqlint']
 let g:flake8_max_line_length=100
 let g:syntastic_typescript_checkers = ['tslint', 'tsc']
 let g:syntastic_typescript_tsc_fname = ''
