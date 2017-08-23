@@ -63,13 +63,10 @@ colorscheme slate
 if has("gui_running")
     if has("gui_win32")
         set guifont=Lucida\ Console:h12
-        colorscheme slate
     elseif has("gui_macvim")
         set guifont="Monaco\ 14"
-        colorscheme slate
     else
         set guifont=Consolas\ 14
-        colorscheme slate
     endif
 endif
 
