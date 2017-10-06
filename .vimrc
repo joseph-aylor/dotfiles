@@ -26,7 +26,10 @@ set splitbelow
 set splitright
 set fdm=indent
 set foldlevelstart=20
+let g:vimwiki_folding='list'
+filetype plugin on
 
+" Configure Indent Guides Plugin
 let g:indent_guides_enable_on_vim_startup = 1
 let g:indent_guides_exclude_filetypes = ['help', 'nerdtree']
 let g:indent_guides_guide_size = 1
@@ -58,6 +61,7 @@ function MyDiff()
   silent execute '!' . cmd . ' ' . opt . arg1 . ' ' . arg2 . ' > ' . arg3 . eq
 endfunction
 
+" Set Colorscheme
 colorscheme slate
 
 if has("gui_running")
@@ -69,8 +73,6 @@ if has("gui_running")
         set guifont=Consolas\ 14
     endif
 endif
-
-let g:zipPlugin_ext = '*.gqsx'
 
 " This makes airline appear
 set laststatus=2
@@ -86,7 +88,8 @@ let g:syntastic_ruby_checkers = ['rubocop', 'mri']
 let g:syntastic_eruby_checkers = ['ruby', 'rubocop']
 let g:syntastic_coffeescript_checkers = ['coffee', 'coffelint']
 let g:syntastic_json_checkers = ['jsonlint']
-let g:syntastic_sass_checkers = ['sass']
+let g:syntastic_sass_checkers = ['sass', 'sass_lint']
+let g:syntastic_scss_checkers = ['sass', 'sass_lint']
 let g:syntastic_sql_checkers = ['sqlint']
 let g:flake8_max_line_length=100
 let g:syntastic_typescript_checkers = ['tslint', 'tsc']
