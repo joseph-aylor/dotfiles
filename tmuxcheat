@@ -2,8 +2,10 @@ Session Control
 -----------------
 tmux 	       Start a new session
 tmux attach    Re-attach a detached session
+tmux attach -t <<name or number>> Re-attach a specific detached session
 tmux attach -d Re-attach a detached session
                (and detach it from elsewhere)
+tmux ls       Show all sessions
 
 Pane Control
 ------------------
