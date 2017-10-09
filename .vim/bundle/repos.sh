@@ -17,4 +17,6 @@ git clone https://github.com/ngmy/vim-rubocop.git
 git clone https://github.com/kien/ctrlp.vim.git
 git clone https://github.com/kchmck/vim-coffee-script.git
 git clone https://github.com/qpkorr/vim-bufkill
+git clone https://github.com/terryma/vim-multiple-cursors.git
 git clone https://github.com/vimwiki/vimwiki.git
+git clone https://github.com/Quramy/tsuquyomi.git
