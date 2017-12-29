@@ -22,3 +22,5 @@ Ctrl+W R
 Ctrl+W o
 
 Ctrl+w [HJKL] swap with window in that direction
+
+In insert ctrl + D -> Deindent ctrl + T -> Indent
