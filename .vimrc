@@ -87,14 +87,25 @@ let g:airline_theme='simple'
 let g:syntastic_ruby_checkers = ['rubocop', 'mri']
 let g:syntastic_eruby_checkers = ['ruby', 'rubocop']
 let g:syntastic_coffeescript_checkers = ['coffee', 'coffelint']
+let g:syntastic_css_checkers = ['csslint']
 let g:syntastic_json_checkers = ['jsonlint']
 let g:syntastic_sass_checkers = ['sass', 'sass_lint']
 let g:syntastic_scss_checkers = ['sass', 'sass_lint']
 let g:syntastic_sql_checkers = ['sqlint']
+let g:syntastic_python_checkers = ['pycodestyle', 'python']
 let g:flake8_max_line_length=100
 let g:tsuquyomi_disable_quickfix = 1
 let g:syntastic_typescript_checkers = ['tsuquyomi', 'tslint'] " You shouldn't use 'tsc' checker.
+let g:syntastic_javascript_checkers = ['eslint']
 
 " Open NERDTree on open
 au VimEnter * NERDTree
 au VimEnter * wincmd p
+
+" Allow for BIG projects
+let g:ctrlp_max_files=0
+
+" If ag is available, use that
+if executable('ag')
+  let g:ackprg = 'ag --vimgrep'
+endif
