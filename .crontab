@@ -1,0 +1,1 @@
+*/5 * * * * /usr/local/bin/gcalcli --calendar jaylor@topicdesign.com remind 15 '/usr/local/bin/terminal-notifier -message "\%s"'
