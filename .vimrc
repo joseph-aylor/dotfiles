@@ -20,8 +20,12 @@ map <C-h> <C-w>h
 map <C-j> <C-w>j
 map <C-k> <C-w>k
 map <C-l> <C-W>l
-map <C-b> :CtrlPBuffer<Enter>
 nmap <C-o> 090la<Enter><Esc>
+
+" These rely on FZF.vim
+map <C-p> :FZF<Enter>
+map <C-b> :Buffers<Enter>
+
 set splitbelow
 set splitright
 set fdm=indent
