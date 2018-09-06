@@ -18,6 +18,10 @@ git config --global core.editor "vim"
 alias bach='mplayer -vo null -shuffle ~/Bach/*'
 alias youtube-audio="youtube-dl --extract-audio --audio-format mp3"
 
+# Let's not use ancient python
+alias python='python3'
+alias pip='pip3'
+
 function parse_git_branch { 
   git branch --no-color 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/' 
 } 
