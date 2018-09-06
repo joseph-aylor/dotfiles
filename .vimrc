@@ -113,3 +113,6 @@ let g:ctrlp_max_files=0
 if executable('ag')
   let g:ackprg = 'ag --vimgrep'
 endif
+
+" TODO make a conditional for this
+let g:ale_ruby_rubocop_executable = 'bundle'
