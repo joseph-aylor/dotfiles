@@ -1,4 +1,7 @@
 eval "$(rbenv init -)"
+
+# TODO: Move this out of this file
+# TODO: make the variable names not dumb.
 x=();
 for filename in ~/radio/*.pls; do
   file=${filename/$HOME\/radio\/};
@@ -12,8 +15,12 @@ alias be='bundle exec'
 alias vlc='/Applications/VLC.app/Contents/MacOS/VLC -I rc'
 # ln -s /Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl /usr/local/bin/subl
 alias subl='reattach-to-user-namespace subl'
-export EDITOR='vim'
-git config --global core.editor "vim" 
+
+# Been using Jetbrains products lately.
+# Going from them to vim is quite jarring.
+# No I'm not going to use a vim plugin.
+export EDITOR='nano'
+git config --global core.editor "nano"
 
 alias bach='mplayer -vo null -shuffle ~/Bach/*'
 alias youtube-audio="youtube-dl --extract-audio --audio-format mp3"
