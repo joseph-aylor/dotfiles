@@ -12,15 +12,15 @@ done;
 names=${x[@]};alias radiols="echo $names";
 
 alias be='bundle exec'
-alias vlc='/Applications/VLC.app/Contents/MacOS/VLC -I rc'
+alias vlc='/Applications/VLC.app/Contents/MacOS/VLC'
 # ln -s /Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl /usr/local/bin/subl
 alias subl='reattach-to-user-namespace subl'
 
 # Been using Jetbrains products lately.
 # Going from them to vim is quite jarring.
 # No I'm not going to use a vim plugin.
-export EDITOR='nano'
-git config --global core.editor "nano"
+# export EDITOR='nano'
+# git config --global core.editor "nano"
 
 alias bach='mplayer -vo null -shuffle ~/Bach/*'
 alias youtube-audio="youtube-dl --extract-audio --audio-format mp3"
