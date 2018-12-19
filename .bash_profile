@@ -19,10 +19,12 @@ alias subl='reattach-to-user-namespace subl'
 # Been using Jetbrains products lately.
 # Going from them to vim is quite jarring.
 # No I'm not going to use a vim plugin.
-# export EDITOR='nano'
-# git config --global core.editor "nano"
+export EDITOR='vim'
+git config --global core.editor "vim"
 
 alias bach='mplayer -vo null -shuffle ~/Bach/*'
+alias art-bell-collection='mplayer -vo null -shuffle ~/joedrive/shows/*'
+alias lofi='mplayer -vo null -shuffle ~/joedrive/Music/lofi/**/*'
 alias youtube-audio="youtube-dl --extract-audio --audio-format mp3"
 
 # Let's not use ancient python
