@@ -99,8 +99,8 @@ let g:syntastic_sql_checkers = ['sqlint']
 let g:syntastic_python_checkers = ['pycodestyle', 'python']
 let g:flake8_max_line_length=100
 let g:tsuquyomi_disable_quickfix = 1
-let g:syntastic_typescript_checkers = ['tsuquyomi', 'tslint'] " You shouldn't use 'tsc' checker.
 let g:syntastic_javascript_checkers = ['eslint']
+let g:syntastic_typescript_checkers = ['tsuquyomi']
 
 " Open NERDTree on open
 au VimEnter * NERDTree
