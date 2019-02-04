@@ -22,6 +22,10 @@ map <C-k> <C-w>k
 map <C-l> <C-W>l
 nmap <C-o> 090la<Enter><Esc>
 
+" Per filetype tabs
+autocmd Filetype python setlocal ts=4 sw=4 sts=4 expandtab
+autocmd Filetype typescript setlocal ts=4 sw=4 sts=4 expandtab
+
 " These rely on FZF.vim
 map <C-p> :FZF<Enter>
 map <C-b> :Buffers<Enter>
@@ -97,6 +101,7 @@ let g:syntastic_sass_checkers = ['sass', 'sass_lint']
 let g:syntastic_scss_checkers = ['sass', 'sass_lint']
 let g:syntastic_sql_checkers = ['sqlint']
 let g:syntastic_python_checkers = ['pycodestyle', 'python']
+let g:syntastic_python_pycodestyle_post_args="--max-line-length=120"
 let g:flake8_max_line_length=100
 let g:tsuquyomi_disable_quickfix = 1
 let g:syntastic_javascript_checkers = ['eslint']
