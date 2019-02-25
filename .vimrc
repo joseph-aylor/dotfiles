@@ -100,8 +100,10 @@ let g:syntastic_json_checkers = ['jsonlint']
 let g:syntastic_sass_checkers = ['sass', 'sass_lint']
 let g:syntastic_scss_checkers = ['sass', 'sass_lint']
 let g:syntastic_sql_checkers = ['sqlint']
-let g:syntastic_python_checkers = ['pycodestyle', 'python']
-let g:syntastic_python_pycodestyle_post_args="--max-line-length=120"
+let g:syntastic_python_checkers = ['pycodestyle', 'python', 'flake8']
+let g:syntastic_python_flake8_post_args = "--max-line-length=160"
+let g:syntastic_python_pycodestyle_post_args = "--max-line-length=160"
+let g:syntastic_python_flake8_args = "--max-line-length=160"
 let g:flake8_max_line_length=100
 let g:tsuquyomi_disable_quickfix = 1
 let g:syntastic_javascript_checkers = ['eslint']
