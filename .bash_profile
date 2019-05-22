@@ -22,6 +22,8 @@ alias subl='reattach-to-user-namespace subl'
 export EDITOR='vim'
 git config --global core.editor "vim"
 
+export PAGER='less'
+
 alias bach='mplayer -vo null -shuffle ~/Bach/*'
 alias art-bell-collection='mplayer -vo null -shuffle ~/joedrive/shows/*'
 alias lofi='mplayer -vo null -shuffle ~/joedrive/Music/lofi/**/*'
