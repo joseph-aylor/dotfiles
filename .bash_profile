@@ -28,6 +28,7 @@ alias bach='mplayer -vo null -shuffle ~/Bach/*'
 alias art-bell-collection='mplayer -vo null -shuffle ~/joedrive/shows/*'
 alias lofi='mplayer -vo null -shuffle ~/joedrive/Music/lofi/**/*'
 alias youtube-audio="youtube-dl --extract-audio --audio-format mp3"
+alias wiki="vim -c VimwikiIndex"
 
 # Let's not use ancient python
 alias python='python3'
