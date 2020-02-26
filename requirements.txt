@@ -1,4 +1,0 @@
-pep8==1.6.2
-flake8==2.4.1
-pymysql==0.6.6
-pyftpdlib==1.4.0

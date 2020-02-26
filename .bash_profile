@@ -27,6 +27,7 @@ export PAGER='less'
 alias bach='mplayer -vo null -shuffle ~/Bach/*'
 alias art-bell-collection='mplayer -vo null -shuffle ~/joedrive/shows/*'
 alias lofi='mplayer -vo null -shuffle ~/joedrive/Music/lofi/**/*'
+alias future-funk='mplayer -vo null -shuffle ~/joedrive/Music/future_funk/**/*'
 alias youtube-audio="youtube-dl --extract-audio --audio-format mp3"
 alias wiki="vim -c VimwikiIndex"
 
