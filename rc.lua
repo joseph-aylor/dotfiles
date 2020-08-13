@@ -541,6 +541,7 @@ do
   local cmds =
   {
     "nm-applet",
+    "cbatticon -n",
     "eval `ssh-agent`"
   }
 
