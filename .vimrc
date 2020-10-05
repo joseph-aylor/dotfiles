@@ -87,7 +87,10 @@ set laststatus=2
 " Since we have airline, this is redundant
 set noshowmode
 " Use simple Airline theme
-let g:airline_theme='simple'
+" let g:airline_theme='simple'
+
+" Use solarized Airline theme
+let g:airline_theme='solarized'
 
 " Syntastic Checkers
 " Be sure to install them using package managers (npm, gem)
