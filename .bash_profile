@@ -13,12 +13,8 @@ names=${x[@]};alias radiols="echo $names";
 
 alias be='bundle exec'
 alias vlc='/Applications/VLC.app/Contents/MacOS/VLC'
-# ln -s /Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl /usr/local/bin/subl
 alias subl='reattach-to-user-namespace subl'
 
-# Been using Jetbrains products lately.
-# Going from them to vim is quite jarring.
-# No I'm not going to use a vim plugin.
 export EDITOR='vim'
 git config --global core.editor "vim"
 
@@ -40,3 +36,5 @@ function parse_git_branch {
 } 
 
 export PS1="\$(parse_git_branch) -  \\$ "
+
+set -o vi
