@@ -110,6 +110,7 @@ let g:syntastic_python_flake8_args = "--max-line-length=160"
 let g:flake8_max_line_length=100
 let g:tsuquyomi_disable_quickfix = 1
 let g:syntastic_javascript_checkers = ['eslint']
+" let g:syntastic_javascript_eslint_exec = 'npx eslint'
 let g:syntastic_typescript_checkers = ['tsuquyomi']
 
 " Open NERDTree on open
