@@ -1,0 +1,6 @@
+(sleep 3s && source ~/dotfiles/captoctrl.sh) &
+(sleep 3s && tint2) &
+(sleep 3s && nm-applet) &
+(sleep 3s && blueman-applet) &
+(sleep 3s && volumeicon) &
+(sleep 3s && nitrogen --restore) &
