@@ -13,21 +13,17 @@ names=${x[@]};alias radiols="echo $names";
 
 alias be='bundle exec'
 alias vlc='/Applications/VLC.app/Contents/MacOS/VLC'
-# ln -s /Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl /usr/local/bin/subl
 alias subl='reattach-to-user-namespace subl'
 
-# Been using Jetbrains products lately.
-# Going from them to vim is quite jarring.
-# No I'm not going to use a vim plugin.
 export EDITOR='vim'
 git config --global core.editor "vim"
 
 export PAGER='less'
 
-alias bach='mplayer -vo null -shuffle ~/Bach/*'
-alias art-bell-collection='mplayer -vo null -shuffle ~/joedrive/shows/*'
-alias lofi='mplayer -vo null -shuffle ~/joedrive/Music/lofi/**/*'
-alias future-funk='mplayer -vo null -shuffle ~/joedrive/Music/future_funk/**/*'
+alias bach='mpv -vo=null -shuffle ~/Bach/*'
+alias art-bell-collection='mpv -vo=null -shuffle ~/joedrive/shows/*'
+alias lofi='mpv -vo=null -shuffle ~/lofi/**/*'
+alias future-funk='mpv -vo=null -shuffle ~/joedrive/Music/future_funk/**/*'
 alias youtube-audio="youtube-dl --extract-audio --audio-format mp3"
 alias wiki="vim -c VimwikiIndex"
 
@@ -40,3 +36,5 @@ function parse_git_branch {
 } 
 
 export PS1="\$(parse_git_branch) -  \\$ "
+
+set -o vi
