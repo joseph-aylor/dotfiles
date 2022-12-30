@@ -6,3 +6,4 @@ bind-key k up
 
 save-path "~/news"
 download-path "~/news/%n"
+podcast-auto-enqueue no
