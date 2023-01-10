@@ -114,8 +114,8 @@ let g:syntastic_javascript_checkers = ['eslint']
 let g:syntastic_typescript_checkers = ['tsuquyomi']
 
 " Open NERDTree on open
-au VimEnter * NERDTree
-au VimEnter * wincmd p
+" au VimEnter * NERDTree
+" au VimEnter * wincmd p
 
 " Allow for BIG projects
 let g:ctrlp_max_files=0
