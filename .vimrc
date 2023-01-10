@@ -127,3 +127,6 @@ endif
 
 " TODO make a conditional for this
 let g:ale_ruby_rubocop_executable = 'bundle'
+
+let g:ale_fixers = ['black', 'prettier', 'eslint', 'tslint']
+let g:ale_fix_on_save = 1
