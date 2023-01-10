@@ -33,7 +33,7 @@
 	url = https://github.com/nvie/vim-flake8.git
 [submodule ".vim/bundle/ale"]
 	path = .vim/bundle/ale
-	url = https://github.com/w0rp/ale.git
+	url = https://github.com/dense-analysis/ale.git
 [submodule ".vim/bundle/vim-jsx"]
 	path = .vim/bundle/vim-jsx
 	url = https://github.com/mxw/vim-jsx.git
