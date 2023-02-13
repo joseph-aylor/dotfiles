@@ -3,6 +3,7 @@ unbind-key k
 
 bind-key j down
 bind-key k up
+bind-key TAB next-unread
 
 save-path "~/news"
 download-path "~/news/%n"
