@@ -1,5 +1,6 @@
 unbind-key j
 unbind-key k
+unbind-key TAB
 
 bind-key j down
 bind-key k up
